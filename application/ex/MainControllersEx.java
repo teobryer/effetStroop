@@ -1,13 +1,14 @@
-package application.ex;
+package effetstroop.application.ex;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-import application.Couleur;
-import application.Main;
-import application.parametres.MainControllersParametres;
+import effetstroop.application.Couleur;
+import effetstroop.application.Main;
+import effetstroop.application.parametres.MainControllersParametres;
 import javafx.beans.value.ChangeListener;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

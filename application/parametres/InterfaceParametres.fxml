@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="470.0" prefWidth="617.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.parametres.MainControllersParametres">
+<BorderPane prefHeight="470.0" prefWidth="617.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="effetstroop.application.parametres.MainControllersParametres">
    <top>
       <HBox prefHeight="312.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>

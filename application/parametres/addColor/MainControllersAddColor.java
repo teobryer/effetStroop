@@ -1,10 +1,11 @@
-package application.parametres.addColor;
+package effetstroop.application.parametres.addColor;
 
 import java.io.IOException;
 
-import application.Couleur;
-import application.Main;
-import application.parametres.MainControllersParametres;
+
+import effetstroop.application.Couleur;
+import effetstroop.application.Main;
+import effetstroop.application.parametres.MainControllersParametres;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;

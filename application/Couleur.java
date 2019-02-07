@@ -1,4 +1,4 @@
-package application;
+package effetstroop.application;
 
 import javafx.scene.paint.Color;
 

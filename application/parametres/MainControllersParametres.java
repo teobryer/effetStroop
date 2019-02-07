@@ -1,6 +1,7 @@
-package application.parametres;
+package effetstroop.application.parametres;
 
 import java.awt.GraphicsEnvironment;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -10,9 +11,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.swing.GroupLayout.Alignment;
 
-import application.Couleur;
-import application.Main;
-import application.parametres.addColor.MainControllersAddColor;
+import effetstroop.application.Couleur;
+import effetstroop.application.Main;
+import effetstroop.application.parametres.addColor.MainControllersAddColor;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -98,7 +99,7 @@ public class MainControllersParametres {
 	//Déclaration des listes utiles et d'autres variables
 	
 	public static float pourcentageSelect;
-	ArrayList<Couleur> listColorsBase = new ArrayList<Couleur>();
+	ArrayList<effetstroop.application.Couleur> listColorsBase = new ArrayList<Couleur>();
 	ArrayList<CheckBox> listColorsBaseCb = new ArrayList<CheckBox>();
     public static ArrayList<Couleur> listNewsColors = new ArrayList<Couleur>();
 	public static ArrayList<CheckBox> listNewsColorsCb = new ArrayList<CheckBox>();
