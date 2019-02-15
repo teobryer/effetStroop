@@ -55,6 +55,7 @@ public class MainControllersEx {
 	public int nbCouleurs;
 	public int nbMots;
 	public  int repValid;
+	public  int repFauss;
 	public static float pourcentValid;
 
 	@SuppressWarnings("static-access")
@@ -252,10 +253,15 @@ public class MainControllersEx {
 	public void verif() throws IOException { // méthode permettant de vérifier le nombre de bonnes réponses
 		repValid = 0;
 		for (Label selec : mesLabelsSelec) {
+			boolean selectionFausse =true;
 			for (Label rep : bonnesRep) {
 				if (rep.equals(selec)) {
 					repValid++;
+					selectionFausse=false; 
 				}
+			}
+			if(selectionFausse== true) {
+				repFauss++;
 			}
 		}
 
@@ -271,7 +277,9 @@ public class MainControllersEx {
 
 		dialog.setTitle("Information");
 		dialog.setHeaderText("Résulat");
-		dialog.setContentText("Vous avez selectionné "+ pourcentValid +"% de bonnes réponses");
+		dialog.setContentText("Bonne(s) réponse(s) : "+ repValid +"/"+ bonnesRep.size()+"\n"+
+		"Mauvaise(s réponse(s) : "+repFauss);
+		
 		dialog.showAndWait();
 		System.exit(0);
 			
