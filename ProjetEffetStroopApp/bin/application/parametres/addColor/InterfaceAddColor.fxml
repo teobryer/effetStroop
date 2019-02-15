@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.parametres.addColor.MainControllersAddColor">
+   <center>
+      <VBox alignment="CENTER_LEFT" prefHeight="114.0" prefWidth="190.0">
+         <children>
+            <Label text="Veuillez entrer le nom de la couleur" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <font>
+                  <Font name="Carlito" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom" prefHeight="25.0" prefWidth="94.0" promptText="Nom de la couleur ( Ex : Rouge,,...)">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label text="Veuillez définir la couleur" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Carlito" size="12.0" />
+               </font>
+            </Label>
+            <ColorPicker fx:id="colorPicker" prefHeight="25.0" prefWidth="116.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ColorPicker>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="valider" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#valider" style="-fx-background-color: white;" text="Valider">
+               <font>
+                  <Font name="Carlito" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#annuler" style="-fx-background-color: white;" text="Annuler">
+               <font>
+                  <Font name="Carlito" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label text="NOUVELLE COULEUR" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Carlito" size="12.0" />
+         </font></Label>
+   </top>
+</BorderPane>
