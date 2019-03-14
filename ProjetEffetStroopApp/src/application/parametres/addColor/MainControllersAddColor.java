@@ -44,6 +44,7 @@ TextField nom;
 		CheckBox tmp= new CheckBox(nomCouleur); // instanciation d'une nouvelle CheckBox( Couleur)
 		tmp.setFont(Font.font("Carlito")); // ajout d'un font 
 	    tmp.setPadding(new Insets(5, 0, 0, 0));// modification du padding de la CheckBox
+	    tmp.setTextFill(couleurApercu);
 		MainControllersParametres.listNewsColorsCb.add(tmp); // ajoute la couleur à la liste de couleur (checkBox)
 		
 		Couleur newColor = new Couleur(couleurApercu,nomCouleur);// instanciation d'une nouvelle Couleur( Couleur)

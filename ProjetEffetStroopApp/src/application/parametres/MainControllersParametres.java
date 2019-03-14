@@ -32,8 +32,11 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.RowConstraints;
@@ -122,14 +125,20 @@ public class MainControllersParametres {
 		pourcentage.getItems().addAll(10, 20, 30, 40, 50, 60, 70, 80, 90); // ajout des possibiltés de pourcentages à la comboBox
 		CheckBox tmp;
 		listColorsBase.add(bleu);
+		bleuCb.setTextFill(Color.BLUE);
 		listColorsBaseCb.add(bleuCb);
+		
 		listColorsBase.add(rouge);
+		rougeCb.setTextFill(Color.RED);
 		listColorsBaseCb.add(rougeCb); // Ajout de toutes les couleurs de base dans deux lsites, une pour la comboBox, une pour prendre l'information du nom et du code RVB;
 		listColorsBase.add(noir);
+		noirCb.setTextFill(Color.BLACK);
 		listColorsBaseCb.add(noirCb);
 		listColorsBase.add(jaune);
+		jauneCb.setTextFill(Color.YELLOW);
 		listColorsBaseCb.add(jauneCb);
 		listColorsBase.add(vert);
+		vertCb.setTextFill(Color.GREEN);
 		listColorsBaseCb.add(vertCb);
 		
 		getLesCouleurs().getChildren().addAll(listNewsColorsCb); // Ajout de la liste de nouvelles couleurs (initialement vide au 1er lancement de la scene)
